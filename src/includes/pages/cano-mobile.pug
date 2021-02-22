@@ -1,0 +1,25 @@
+.cano-mb-section
+    .banner-mb-section.mx-3
+        include ../components/banner-mb.pug
+        +banner-mb("Cano")
+    .filter-mb-section
+        include ../components/filter-mb.pug
+        +filter-mb("Danh sách Cano")
+    .box-cano-section
+        .container
+            .row
+                .col-lg-12
+                    .box-cano-detail
+                        include ../components/box-cano-mobile.pug
+                        +box__cano__mobile(2)
+                        each item in [1,2]
+                            include ../components/box-cano-mobile.pug
+                            +box__cano__mobile(3)
+            button.btn-more +
+                span 98
+                |Cano
+            include ../components/loader.pug
+    include ../components/box-partner-mb.pug
+    include ../components/box-discover-more.pug
+    + box-discover-more(false)
+    include ../components/happy-client-mb.pug

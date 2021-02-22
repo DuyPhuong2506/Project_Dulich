@@ -1,0 +1,21 @@
+-
+    const boxData = {
+        title: "Khám phá nhiều hơn nữa cùng AZCRUISE",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. ",
+        videoSrc: "https://www.youtube.com/embed/hbQbaUeOkDQ?autoplay=1&mute=1&loop=1",
+    }
+
+mixin box-discover-more(text=false)
+    .box-discover-more-section
+        .discover-more
+            .container
+                .row.align-items-center
+                    .col-lg-4.col-md-12
+                        .discover-more__content
+                            h3.content__title=boxData.title
+                            if text
+                                p.content__text=boxData.content
+                    .col-lg-8.col-md-12
+                        .discover-more__video
+                            video(autoplay controls)
+                                source(src="./assets/video/video.mp4" type="video/mp4")
