@@ -1,0 +1,14 @@
+extend includes/layout/layout-mobile.pug
+block pages
+	.helicopter-section-mb
+		.helicopter-banner-section
+			.container
+				.row
+					.col-md-12
+						include includes/components/banner-mb.pug
+						+banner-mb("Trực thăng",2)
+		include includes/pages/helicopter-mb.pug
+		+box-helicopter-mb("Trực thăng tham vịnh","./assets/images/box-helicopter/layer-3.png")
+		include includes/components/box-discover-more.pug
+		+ box-discover-more(false)
+		include includes/components/happy-client-mb.pug

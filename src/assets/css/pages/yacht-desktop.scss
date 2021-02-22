@@ -1,0 +1,57 @@
+.yacht__section {
+    .box-yacht-section {
+        padding: 100px 0 70px 0;
+        border-bottom: 1px solid $border-color-4;
+        position: relative;
+        .btn-more {
+            border-radius: 6px;
+            border: solid 1px $primary-color;
+            padding: 16px 65px;
+            display: inline-block;
+            font-family: $font-futura;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            color: $grey-12;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+            background: $grey-3;
+            z-index: 99;
+            transition: 0.3s ease-in-out;
+            white-space: nowrap;
+            outline: none;
+            & span{
+                padding-right: 4px;
+            }
+            &:hover {
+                border-color: $blue3;
+            }
+            &.loading{
+                display: none;
+            }
+        }
+    }
+    .box-discover-section {
+        margin-top: 100px;
+    }
+    .box-yacht__title {
+        & h2 {
+            font-family: $font-futura;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+            color: $grey-12;
+        }
+    }
+    .happy__client__wrapper {
+        margin-top: 100px;
+    }
+    .box-partner-section {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

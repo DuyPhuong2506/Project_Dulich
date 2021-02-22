@@ -1,0 +1,155 @@
+.happy__client__wrapper {
+    .happy__client__item-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 90px;
+        @include breakpoint(425) {
+            padding-right: 0;
+            p {
+                margin-top: 5px;
+            }
+        }
+    }
+    .happy__client__item {
+        h2 {
+            font-size: 60px;
+            color: #222f5a;
+            margin-bottom: 20px;
+            width: 200px;
+            font-family: $font-futura;
+            font-weight: 600;
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+            @include breakpoint(425) {
+                font-size: 26px;
+                line-height: 36.14px;
+                color: #10284f;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #616980;
+            font-family: $font-nunito;
+            @include breakpoint(425) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .device-slide,
+        .card-slide {
+            position: relative;
+            .number {
+                font-size: 48px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .item__device {
+            position: relative;
+            margin-right: 50px;
+            padding: 14px 17px;
+            flex: 0 0 240px;
+            max-width: 240px;
+            overflow: hidden;
+            pointer-events: none;
+            @include breakpoint(425) {
+                margin-right: 0;
+                pointer-events: auto;
+                box-shadow: #57bafb52 0px 1px 20px 2px;
+                border-radius: 40px;
+            }
+            .device-slide {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .device-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                pointer-events: none;
+            }
+        }
+
+        .item__client__card {
+            position: relative;
+            flex: 1;
+            width: 1px;
+            .card-slide {
+                height: 350px;
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            .pagination-control {
+                margin: 0 50px;
+                .owl-dot {
+                    height: 2px;
+                    width: 40px;
+                    background: $grey-20;
+                    outline: none;
+                    border: none;
+                    transition: 0.3s ease;
+                    &.active {
+                        background: $blue-draw;
+                    }
+                }
+            }
+
+            .client-carousel-control {
+                position: absolute;
+                bottom: -100px;
+                right: 15px;
+                .nav-control {
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+                .owl-prev,
+                .owl-next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-58%);
+                    cursor: pointer;
+                    margin: 0 5px;
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    &.disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                    }
+                    img {
+                        width: 15px;
+                    }
+                }
+                .owl-prev {
+                    left: 0;
+                }
+                .owl-next {
+                    right: 25px;
+                }
+                .carousel-info {
+                    color: $box-heading;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

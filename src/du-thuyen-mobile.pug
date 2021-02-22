@@ -1,0 +1,28 @@
+extend includes/layout/layout-mobile.pug
+block pages
+    .yacht-section-mobile
+        .banner__mb
+            .container
+                .row
+                    .col-12
+                        include includes/components/banner-mb.pug
+                        +banner-mb("Tàu riêng thăm vịnh Tuyến 4h")
+        include includes/components/filter-mb.pug
+        +filter-mb("+120 Du thuyền")
+        include includes/components/box-yacht-mb.pug
+        .box-yacht-mobile__section
+            .container
+                .row
+                    .col-lg-4
+                        +boxYachtMobile("assets/images/box-yacht/product-thumb.png","đ 599,000")
+                    .col-lg-4
+                        +boxYachtMobile("assets/images/box-yacht/product-thumb2.png")
+                    .col-lg-4
+                        +boxYachtMobile("assets/images/box-yacht/product-thumb3.png")
+                button.btn-more +
+                    span 98
+                    | Du thuyền
+                include includes/components/loader.pug
+        include includes/components/box-discover-more.pug
+        + box-discover-more(false)
+        include includes/components/happy-client-mb.pug

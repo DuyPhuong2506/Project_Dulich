@@ -1,0 +1,59 @@
+-
+    const toDoArr2 = [
+        "Lịch trình tuyến 6h ",
+        "Xe đón quý khách",
+        "45 phút",
+        "Check - in lên tàu tại cảng Tuần Châu hoặc cảng Sunworld",
+        "30 phút",
+        "Tàu khởi hành thăm quan vịnh Hạ Long",
+        "35 phút",
+        "Khám phá động Thiên Cung - Hang Đầu Gỗ",
+        "1 giờ 10 phút",
+        "Chụp ảnh những cảnh thiên nhiên hùng vĩ của Vịnh Hạ Long ",
+        "10 phút",
+        "Tham gia chèo Kayak, khám phá khu Làng Chài Ba Hang",
+        "60 phút",
+        "Chụp ảnh sống ảo ở Hòn Trống Mái (Gà Chọi)-biểu tượng của vịnh hạ Long",
+        "10 phút",
+        "Dùng bữa trưa trên tàu ",
+        "40 phút",
+        "Tàu cập cảng trả khách",
+        "20 phút",
+        "Xe đưa quý khách trở về khách sạn",
+        "30 phút",
+        "Tàu cập cảng trả khách",
+        "30 phút",
+        "Xe đưa quý khách trở về khách sạn",
+    ]
+    const toDoArr1 = [
+        "Lịch trình tuyến 4h ",
+        "Xe đón quý khách",
+        "45 phút",
+        "Check - in lên tàu tại cảng Tuần Châu hoặc cảng Sunworld",
+        "30 phút",
+        "Tàu khởi hành thăm quan vịnh Hạ Long",
+        "35 phút",
+        "Khám phá động Thiên Cung - Hang Đầu Gỗ",
+        "1 giờ 10 phút",
+        "Chụp ảnh những cảnh thiên nhiên hùng vĩ của Vịnh Hạ Long ",
+        "10 phút",
+        "Tham gia chèo Kayak, khám phá khu Làng Chài Ba Hang",
+        "60 phút",
+        "Chụp ảnh sống ảo ở Hòn Trống Mái (Gà Chọi)-biểu tượng của vịnh hạ Long",
+        "10 phút",
+        "Dùng bữa trưa trên tàu ",
+        "40 phút",
+        "Tàu cập cảng trả khách",
+        "20 phút",
+        "Xe đưa quý khách trở về khách sạn",
+    ]
+
+.schedule-section
+    .container
+        .row
+            .col-lg-12
+                include schedule.pug
+                +schedule(toDoArr1,true)
+            .col-lg-12
+                include schedule.pug
+                +schedule(toDoArr2,true)

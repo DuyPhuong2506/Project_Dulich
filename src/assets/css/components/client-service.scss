@@ -1,0 +1,99 @@
+.client-service-section {
+    .client-service {
+        &__img {
+            overflow: hidden;
+            img {
+                border-radius: 20px;
+                overflow: hidden;
+                width: 100%;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        &__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 90px;
+            padding-right: 50px;
+            @include breakpoint(1024) {
+                padding-left: 0;
+                margin-top: 30px;
+            }
+            @include breakpoint(425) {
+                margin-top: 0;
+                padding-right: 0;
+            }
+            @include breakpointminmax(768, 1199) {
+                padding-right: 0;
+            }
+            &-title {
+                font-family: $font-futura;
+                font-size: 30px;
+                font-weight: 600;
+                color: #222f5a;
+                margin-bottom: 30px;
+                @include breakpoint(1199) {
+                    margin-bottom: 5px;
+                }
+                @include breakpoint(768) {
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                }
+                @include breakpoint(425) {
+                    font-size: 26px;
+                    margin: 0;
+                    color: #10284f;
+                    line-height: 30px;
+                }
+            }
+            &-icon-wrap {
+                display: flex;
+                justify-content: space-between;
+                @include breakpoint(425) {
+                    flex-direction: column;
+                }
+                .client-service__box-icon {
+                    margin-top: 25px;
+                    @include breakpoint(425) {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+                    }
+                    img {
+                        @include breakpoint(425) {
+                            width: 75px;
+                        }
+                    }
+                    .icon__title {
+                        font-family: $font-futura;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #222f5a;
+                        padding-top: 20px;
+                        display: block;
+                        @include breakpoint(425) {
+                            margin-left: 40px;
+                            font-size: 20px;
+                            font-weight: 450;
+                            color: #10284f;
+                            padding-top: 0;
+                            line-height: 27.6px;
+                        }
+                    }
+                }
+            }
+            &-content {
+                font-family: $font-nunito;
+                font-size: 16px;
+                color: #697fa2;
+                margin-top: 22px;
+                @include breakpoint(425) {
+                    margin-top: 38px;
+                    margin-bottom: 0;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

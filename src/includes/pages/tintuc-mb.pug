@@ -1,0 +1,39 @@
+section.news-mb
+    .container
+        .news__breadcrum-wrapper
+            .news__breadcrum
+                h1.color-text Tin tức
+                include ../components/breadcrumb.pug
+    .news__banner
+        .container
+            .row
+                h6.font-svn Nổi bật
+                .news__banner-box
+                        .owl-carousel.owl-theme
+                            each item in [1,2,3]
+                                .item
+                                    .box
+                                        img(src="./assets/images/detail-ship/ship-1.png", alt="anh")              
+                                        .box-infor.pd
+                                            span.box-time.font-nutisan 11 tháng 3, 2021
+                                            h4.font-svn Gợi ý 10 điểm đến hấp dẫn khi du lịch Hạ Long
+    .news__content
+        .container
+            .news__content-wrapper
+                h6.color-text.font-svn Du lịch hạ long
+                .row
+                    each item in [1,2,3,4,5]
+                        .col-12
+                            .box-content
+                                img(src="./assets/images/detail-ship/ship-1.png", alt="anh")
+                                .box-description.d-flex.flex-column
+                                    span.description-time.font-nutisan 11 tháng 3, 2021
+                                    h4.color-text.font-svn Gợi ý 10 điểm du lịch Hạ Long
+                                    span.other-color.description-details.font-nutisan Uber cool with a stunning view of downtown Saigon, Chill Skybar is one of the most popular nightspots in the city. 
+                                    a(href="").color-text.font-svn Xem tiếp
+            .news__panigation.d-flex.justify-content-center
+                a(href="").d-flex.justify-content-center.align-items-center.current-color 1
+                a(href="").d-flex.justify-content-center.align-items-center 2
+                a(href="").d-flex.justify-content-center.align-items-center ... 
+                a(href="").d-flex.justify-content-center.align-items-center 9
+                a(href="").d-flex.justify-content-center.align-items-center 10                    

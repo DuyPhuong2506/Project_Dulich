@@ -1,0 +1,36 @@
+.filter-section {
+    border-bottom: 1px solid $border-color-4;
+    .filter {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        &__label {
+            font-family: $font-roboto;
+            font-size: 16px;
+            font-weight: 600;
+            color: $blue-dark-cl;
+            margin-right: 44px;
+            min-width: 45px;
+        }
+        select {
+            color: $grey-13;
+            border: solid 1px #ebebeb;
+            background-color: $white;
+            border-radius: $select-radius;
+            font-family: $font-roboto;
+            font-size: 16px;
+            min-width: 113px;
+            padding: 7px 36px 7px 16px;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url(../images/filter/layer-3.png);
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: 86% 50%;
+            margin: 6px 0;
+        }
+    }
+}

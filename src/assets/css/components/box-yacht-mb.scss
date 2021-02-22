@@ -1,0 +1,123 @@
+.box-yacht-mobile__section {
+	.yacht-mobile__items {
+		background-color: $white;
+		padding: 25px 25px 0 25px;
+		margin: 5px -25px;
+		border-radius: $border-radius-form;
+		overflow: hidden;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			box-shadow: 2px 3px 12px 2px $box-shadow;
+			.yacht-item__image {
+				img {
+					transition: 0.4s;
+					transform: scale(1.2);
+				}
+			}
+		}
+		.yacht-item__image {
+			position: relative;
+			overflow: hidden;
+			img {
+				transform: scale(1);
+				transition: 0.4s;
+			}
+			.endow {
+				position: absolute;
+				left: 0;
+				top: 36px;
+
+				p {
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 16px;
+					font-family: $font-nunito;
+					color: $white;
+					background-color: #f73e3e;
+					padding: 7px 10px;
+					border-top-right-radius: 7px;
+					border-bottom-right-radius: 7px;
+				}
+			}
+		}
+		.yacht-item__text {
+			padding: 20px 0;
+
+			a {
+				h3 {
+					color: $blue-dark-cl;
+					font-weight: 600;
+					font-family: $font-futura;
+					font-size: 20px;
+					line-height: 28px;
+				}
+			}
+			ul {
+				margin-bottom: 20px;
+				li {
+					margin: 4px 0;
+					span.dots {
+						width: 8px;
+						height: 8px;
+						background: $bg-dotted;
+						border-radius: 50%;
+						display: block;
+						margin-right: 8px;
+					}
+					p {
+						font-size: 14px;
+						line-height: 1.71;
+						color: $blue-cl;
+						line-clamp: 1;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
+						overflow: hidden;
+						font-family: $font-nunito;
+						margin-bottom: 0;
+						width: calc(100% - 8px);
+						flex-basis: calc(100% - 8px);
+					}
+				}
+			}
+			.price {
+				border-top: 1px solid $border-color4;
+				padding: 20px 0;
+				.real__price {
+					font-size: 20px;
+					color: $blue-dark-cl;
+					font-weight: bold;
+					font-family: $font-futura;
+					margin-bottom: 0;
+				}
+				.sale_price {
+					font-size: 16px;
+					color: #949CB4;
+					text-decoration: line-through;
+					font-family: $font-futura;
+					margin-left: 15px;
+				}
+			}
+			a.btn-booking {
+				padding: 10px 0;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 600;
+				background: $orange-az2;
+				border: 2px solid $orange-az2;
+				display: block;
+				border-radius: 6px;
+				transition: 0.3s;
+				font-family: $font-futura;
+				&:hover {
+					background: transparent;
+					color: $pinkish-orange;
+					transition: 0.3s;
+					border: 2px solid $pinkish-orange;
+				}
+			}
+		}
+	}
+}

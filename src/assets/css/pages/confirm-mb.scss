@@ -1,0 +1,315 @@
+.confirm__mb-section {
+    margin-bottom: 40px;
+    .mg-b-0 {
+        margin-bottom: 0;
+    }
+    .mg-bt-10 {
+        margin-bottom: 10px;
+    }
+    select {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-family: $font-nunito;
+        color: $gray-12;
+        font-weight: bold;
+    }
+    .booking__train-title {
+        h1 {
+            margin-top: 50px;
+            font-size: 36px;
+            font-family: $font-futura;
+            font-weight: 600;
+            color: $blue-dark-11;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+    }
+    .booking__train-wrapper {
+        .train__wrapper-fill {
+            background-color: $white;
+            border-radius: 10px;
+            padding: 24px;
+            .wrapper__fill-title {
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #10284F;
+                    margin-bottom: 10px;
+                    line-height: 25px;
+                    font-family: $font-futura;
+                }
+            }
+            .wrapper__fill-form {
+                .mg-8 {
+                    margin-bottom: 11px;
+                }
+                .fill__form-infor {
+                    p {
+                        font-family: $font-nunito;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                        color: $gray-12;
+                    }
+                }
+                .fill__form-note {
+                    p {
+                        font-family: $font-nunito;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 0;
+                        color: $gray-12;
+                    }
+                    padding: 10px 0;
+                    border-bottom: 1px solid $color-border;
+                }
+                .fill__form-p {
+                    margin-top: 10px;
+                    p {
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-family: $font-nunito;
+                        color: $box-text;
+                        margin-bottom: 0px;
+                        &:last-child {
+                            padding: 20px 0;
+                        }
+                        a {
+                            text-decoration: underline;
+                            color: inherit;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                        span {
+                            color: $green-dark;
+                            justify-content: flex-end;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .fill__details {
+                    h4 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #10284F;
+                        margin-bottom: 0;
+                        line-height: 25px;
+                        font-family: $font-futura;
+                        padding: 15px 0;
+                        border-bottom: 1px solid $color-border-2;
+                    }
+                    .infor__details-description {
+                        margin-top: 15px;
+                    }
+                    svg {
+                        margin-right: 10px;
+                    }
+                    p.fw {
+                        font-weight: 700;
+                        font-family: $font-nunito;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $grey-17;
+                        font-family: $font-nunito;
+                        span {
+                            font-weight: 400;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .train__wrapper-service {
+            background-color: $white;
+            border-radius: 10px;
+            margin-top: 11px;
+            padding: 15px 24px;
+            .wrapper__service-title {
+                img {
+                    width: 23px;
+                    height: 18px;
+                }
+                h4 {
+                    font-size: 18px;
+                    color: $blue-dark-cl;
+                    font-family: $font-futura;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+                .service__title-start {
+                    a {
+                        div {
+                            width: 4px;
+                            height: 4px;
+                            background-color: $blue-dark-cl;
+                            border-radius: 100%;
+                        }
+                        div.mg-2px {
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+            .wrapper__service-price {
+                font-family: $font-nunito;
+                font-size: 16px;
+                font-weight: normal;
+                color: $blue-cl;
+                margin-top: 10px;
+                .service__price-checkbox {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $color-border-2;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .booking__train-infor {
+        margin-top: 11px;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 0 24px;
+        .infor__details-title {
+            border-bottom: 1px solid $color-border-2;
+            padding: 10px 0;
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+                color: $blue-dark-cl;
+                font-family: $font-futura;
+                margin-bottom: 5px;
+            }
+        }
+        .infor__details-description {
+            margin-top: 19px;
+            border-bottom: 1px solid $blue-dark-1;
+            p.text-right {
+                font-size: 16px;
+                color: $blue-cl;
+                font-weight: bold;
+                font-family: $font-nunito;
+                white-space: nowrap;
+            }
+            p.text-color {
+                color: $blue-cl;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: $font-nunito;
+                margin-bottom: 18px;
+                svg {
+                    margin-right: 5px;
+                }
+                span {
+                    color: $gray-12;
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    font-weight: normal;
+                    align-items: center;
+                }
+            }
+            p.border-b {
+                border-radius: 4px;
+                border: solid 1px $color-border-3;
+                padding: 10px;
+                img {
+                    width: 17px;
+                    height: 9px;
+                    margin-left: 10px;
+                }
+                span.d-flex.flex-row.align-items-center {
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: $font-nunito;
+                }
+            }
+        }
+        .train__infor-sale {
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #10284F;
+                margin-bottom: 0;
+                line-height: 25px;
+                font-family: $font-futura;
+                padding: 15px 0;
+            }
+            .infor__sale-totle {
+                border-top: 1px solid $color-border-2;
+                padding: 13px 0;
+                p,
+                div {
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    color: $gray-12;
+                    font-weight: normal;
+                    margin-bottom: 10px;
+                    span.totol {
+                        color: $dark-indigo;
+                        font-weight: 400;
+                    }
+                }
+                .wrapp {
+                    .text-bold {
+                        color: $gray-12;
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                    }
+                }
+            }
+        }
+    }
+    .booking__train-sig {
+        padding: 24px;
+        p {
+            font-size: 14px;
+            font-family: $font-nunito;
+            font-weight: normal;
+            color: $gray-18-other;
+        }
+    }
+    .train__wrapper-btn {
+        padding: 0 24px;
+        .wrapper__btn-btn {
+            .col-6 {
+                margin: 0 5px;
+            }
+            button.btn__btn-button.color-gray {
+                color: $blue-light-3;
+                border: 1px solid $color-border;
+                background-color: inherit;
+                font-size: 20px;
+                font-weight: 450;
+                border-radius: 8px;
+                padding: 10px 40px;
+                margin-right: 16px;
+                outline: none;
+                width: 100%;
+            }
+            button.btn__btn-button.other-color {
+                color: $white;
+                background-color: $orange-az2;
+                border: none;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 8px;
+                padding: 10px 40px;
+                outline: none;
+                width: 100%;
+            }
+        }
+    }
+}

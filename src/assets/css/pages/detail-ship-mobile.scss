@@ -1,0 +1,90 @@
+.detail-ship-mobile {
+    background: $white;
+    border-radius: 8px;
+    margin-top: 8px;
+    .detail-ship-section {
+        padding: 40px 25px 20px 25px;
+        .detail-ship__box {
+            position: initial;
+            padding: 0;
+            background-color: initial;
+            h3 {
+                font-family: $font-futura;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 25px;
+                margin: 17px 0px -8px 0px;
+                color: $grey-12;
+            }
+        }
+        .detail-ship__box-label {
+            margin-top: 0;
+            margin-bottom: 7px;
+        }
+        .detail-ship__box-sale {
+            font-size: 12px;
+            padding: 7px 10px;
+            border-radius: 6px;
+        }
+        .detail-ship__box-detail {
+            margin-top: 24px;
+            .detail__item {
+                margin-left: 3px;
+                line-height: 1.6;
+            }
+        }
+    }
+    .detail-ship__box-serDetail {
+        border: none;
+        .serDetail__item {
+            margin-left: 3px;
+            line-height: 1.6;
+        }
+    }
+    .detail-ship__img {
+        width: 100%;
+    }
+    .detail-ship__img-wrap {
+        border-radius: 10px;
+        margin-bottom: 12px;
+        height: 400px;
+        position: relative;
+        @include breakpoint(768) {
+            height: 350px;
+        }
+        @include breakpoint(576) {
+            height: 300px;
+        }
+        @include breakpoint(426) {
+            height: 240px;
+        }
+        &:last-child {
+            margin-bottom: 23px;
+        }
+        & img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .detail-ship__box-book {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 20px;
+        border-top: 1px solid $border-grey;
+        & span {
+            font-size: 16px;
+            color: $grey-12;
+        }
+        & .book__btn {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: $white;
+            padding: 10px 52px;
+            border-radius: 8px;
+            background: $orange-az2;
+        }
+    }
+}

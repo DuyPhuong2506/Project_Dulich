@@ -1,0 +1,122 @@
+.schedule-section {
+    .schedule {
+        @include breakpoint(425) {
+            margin-bottom: 20px;
+        }
+        &__top {
+            @include breakpoint(425) {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $grey-22;
+            }
+            &-btn {
+                will-change: transform;
+                svg {
+                    transition: all 0.5s ease;
+                }
+                &.active {
+                    svg {
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+        &__title {
+            font-family: $font-futura;
+            font-size: 24px;
+            font-weight: 600;
+            color: $grey-12;
+            margin-bottom: 24px;
+            @include breakpoint(425) {
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+        }
+        &__toDo {
+            @include breakpoint(425) {
+                display: none;
+                margin-top: 29px;
+            }
+            &-bevh {
+                padding: 17px 20px;
+                background-color: $white;
+                border-radius: 6px;
+                @include breakpoint(425) {
+                    padding: 10px 12px;
+                    display: flex;
+                    align-items: baseline;
+                }
+                .bevh__circle {
+                    display: inline-block;
+                    span {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 100%;
+                        background-color: $orange-5;
+                        margin-right: 18px;
+                        @include breakpoint(425) {
+                            width: 7px;
+                            height: 7px;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+                span {
+                    font-family: $font-nunito;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $gray-16;
+                    @include breakpoint(425) {
+                        color: $grey-17;
+                    }
+                }
+            }
+            &-time {
+                display: block;
+                font-family: $font-nunito;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.5;
+                color: $grey-12;
+                margin: 18px 0 18px 80px;
+                position: relative;
+                @include breakpoint(425) {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 30px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -56px;
+                    top: 52%;
+                    width: 39px;
+                    height: 1px;
+                    background-color: $orange-5;
+                    @include breakpoint(425) {
+                        display: none;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -56px;
+                    top: -18px;
+                    width: 1px;
+                    height: 60px;
+                    background-color: $orange-5;
+                    @include breakpoint(425) {
+                        height: 44px;
+                        top: -10px;
+                        left: -15px;
+                        background-color: $grey-22;
+                    }
+                }
+            }
+        }
+    }
+    .schedule-info-graphic {
+        margin-top: 50px;
+    }
+}

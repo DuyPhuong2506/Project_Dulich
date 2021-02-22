@@ -1,0 +1,27 @@
+mixin boxYachtMobile(image,price)
+	.yacht-mobile__items
+		.yacht-item__image
+			img(src=image, alt="")
+			.endow: p Ưu đãi -40%
+		.yacht-item__text
+			a(href=""): h3.title Serenity Cruise
+			ul
+				li.d-flex.align-items-baseline
+					span.dots
+					p Cảng khởi hành: Tuần ChâuvCảng khởi hành: Tuần ChâuCảng khởi hành: Tuần ChâuCảng khởi hành: Tuần ChâuCảng khởi hành: Tuần Châu
+				li.d-flex.align-items-baseline
+					span.dots
+					p Thời gian khởi hành: 08h15
+				li.d-flex.align-items-baseline
+					span.dots
+					p Các dịch vụ theo tàu
+				li.d-flex.align-items-baseline
+					span.dots
+					p HDV suốt hành trình
+				li.d-flex.align-items-baseline
+					span.dots
+					p Ăn trên tàu
+			.price.d-flex.align-items-baseline
+				span.real__price đ 399,000
+				span.sale_price=price
+			a.btn.btn-booking(href="./booking-train-desktop.html") Đặt tàu

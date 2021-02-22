@@ -1,0 +1,47 @@
+.not-select-mobile-section{
+    .banner-mb-section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .box-discover-more-section{
+        margin-bottom: 50px;
+    }
+    .description-mb-section{
+        margin-bottom: 50px;
+    }
+    .schedule-section {
+        margin-bottom: 40px;
+    }
+    .select-route-section {
+        margin-bottom: 50px;
+    }
+    .why-choose-section{
+        margin-bottom: 50px;
+        .col-lg-3.col-md-6:last-child .why-choose__item{
+            padding-bottom: 0;
+        }
+    }
+    .happy__client__wrapper {
+        margin-bottom: 50px;
+    }
+    .select-route-section{
+        & .select-route__title{
+            font-family:$font-futura;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: $grey-12;
+            background: $alice-blue;
+            padding: 10px 0px 10px 0px;
+        }
+        & .select-route{
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .schedule-section .col-lg-12:last-child .schedule{
+        margin-bottom: 0;
+    }
+}

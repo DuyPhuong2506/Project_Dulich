@@ -1,0 +1,19 @@
+.partner-slider-section {
+    margin: 150px 0 70px 0;
+    .partner-slider__item{
+        justify-content: center;
+        display: flex;
+    }
+    .owl-carousel .owl-item img {
+        width: unset;
+        margin: 0;
+        @include max-breakpoint(425){
+            width: 90%;
+            margin-left: 2px;
+        }
+    }
+    .owl-carousel .owl-stage {
+        display: flex;
+        align-items: center;    
+    }
+}

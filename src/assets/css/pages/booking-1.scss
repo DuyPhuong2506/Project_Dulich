@@ -1,0 +1,421 @@
+.booking__mb-section {
+    margin-bottom: 40px;
+    .mg-b-0 {
+        margin-bottom: 0;
+    }
+    .mg-bt-10 {
+        margin-bottom: 10px;
+    }
+    select {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-family: $font-nunito;
+        color: $gray-12;
+        font-weight: bold;
+    }
+    .custom-checkbox .custom-control-label {
+        color: #616980;
+        cursor: pointer;
+        margin-left: 8px;
+        font-weight: 400;
+        &::before {
+            box-shadow: none;
+            border-color: $gray-17-other;
+        }
+    }
+    input[type="checkbox"]:checked + .check__label::before {
+        background-color: $red;
+        border-color: $red;
+    }
+    .custom-control-label {
+        &:before,
+        &:after {
+            width: 20px;
+            height: 20px;
+            left: -30px;
+            top: 0px;
+        }
+    }
+    .booking__train-title {
+        h1 {
+            margin-top: 50px;
+            font-size: 36px;
+            font-family: $font-futura;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-bottom: 20px;
+            color: #10284F;
+        }
+    }
+    .booking__train-wrapper {
+        .train__wrapper-fill {
+            background-color: $white;
+            border-radius: 10px;
+            padding: 24px;
+            .wrapper__fill-title {
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #10284F;
+                    margin-left: 10px;
+                    margin-bottom: 0;
+                    line-height: 25px;
+                    font-family: $font-futura;
+                }
+            }
+            .wrapper__fill-form {
+                .mg-8 {
+                    margin-bottom: 8px;
+                }
+                .fill__form-infor {
+                    input {
+                        border: 1px solid $color-border-3;
+                        border-radius: 4px;
+                        padding: 8px 19px;
+                        color: $blue-dark-cl;
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        outline: none;
+                    }
+                }
+                .fill__form-note {
+                    textarea {
+                        height: 110px;
+                        border: 1px solid $color-border-3;
+                        border-radius: 4px;
+                        padding: 8px 19px;
+                        color: $blue-dark-cl;
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        outline: none;
+                    }
+                }
+                .fill__form-p {
+                    margin-top: 10px;
+                    border-bottom: 1px solid $color-border;
+                    p {
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-family: $font-nunito;
+                        color: $box-text;
+                        margin-bottom: 0px;
+                        &:last-child {
+                            padding: 20px 0;
+                        }
+                        a {
+                            text-decoration: underline;
+                            color: inherit;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                        span {
+                            color: $green-dark;
+                            justify-content: flex-end;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .fill__form-text {
+                    margin-top: 23px;
+                    h4 {
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        font-weight: bold;
+                        color: $blue-dark-cl;
+                    }
+                    .fill__form-checkbox {
+                        .custom-control-label {
+                            &:before,
+                            &:after {
+                                width: 20px;
+                                height: 20px;
+                                top: 0.25rem;
+                                left: -30px;
+                            }
+                        }
+                        label {
+                            font-size: 16px;
+                            font-weight: normal;
+                            color: $gray-12;
+                            font-family: $font-nunito;
+                            margin-left: 30px;
+                            width: calc(100% - 20px);
+                        }
+                    }
+                }
+            }
+        }
+        .train__wrapper-service {
+            background-color: $white;
+            border-radius: 10px;
+            margin-top: 8px;
+            padding: 24px;
+            .wrapper__service-title {
+                img {
+                    width: 23px;
+                    height: 18px;
+                }
+                h4 {
+                    font-size: 18px;
+                    color: $blue-dark-cl;
+                    font-family: $font-futura;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+                .service__title-start {
+                    a {
+                        div {
+                            width: 4px;
+                            height: 4px;
+                            background-color: $blue-dark-cl;
+                            border-radius: 100%;
+                        }
+                        div.mg-2px {
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+            .wrapper__service-price {
+                font-family: $font-nunito;
+                font-size: 16px;
+                font-weight: normal;
+                color: $blue-cl;
+                .service__price-checkbox {
+                    padding: 10px 0;
+                    border-bottom: 1px solid $color-border-2;
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+        .train__wrapper-refund {
+            margin-top: 8px;
+            padding: 24px;
+            background-color: $white;
+            border-radius: 8px;
+            .refund__w {
+                a {
+                    margin-bottom: 0;
+                    color: $blue-dark-cl;
+                    font-size: 18px;
+                    font-family: $font-futura;
+                    margin-left: 10px;
+                    font-weight: 600;
+                }
+            }
+            .wrapper__refund-detail {
+                margin-top: 20px;
+            }
+        }
+    }
+    .booking__train-infor {
+        margin-top: 8px;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 0 24px;
+        .infor__details-title {
+            border-bottom: 1px solid $color-border-2;
+            padding: 10px 0;
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+                color: $blue-dark-cl;
+                font-family: $font-futura;
+                margin-bottom: 5px;
+            }
+        }
+        .infor__details-description {
+            margin-top: 19px;
+            border-bottom: 1px solid $blue-dark-1;
+            select {
+                background-color: white;
+                border-radius: 4px;
+                display: inline-block;
+                font: inherit;
+                line-height: 1.5em;
+                padding: 0.5em 3.5em 0.5em 1em;
+                margin: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                color: $gray-12;
+            }
+            select.minimal {
+                background-image: linear-gradient(
+                        45deg,
+                        transparent 50%,
+                        $dark-indigo 50%
+                    ),
+                    linear-gradient(135deg, $dark-indigo 50%, transparent 50%);
+                background-position: calc(100% - 20px) calc(1em + 2px),
+                    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+                background-size: 5px 5px, 5px 5px, 1px 1.5em;
+                background-repeat: no-repeat;
+            }
+            select.minimal:focus {
+                outline: 0;
+            }
+            p.text-right {
+                font-size: 16px;
+                color: $blue-cl;
+                font-weight: bold;
+                font-family: $font-nunito;
+                white-space: nowrap;
+            }
+            p.text-color {
+                color: $blue-cl;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: $font-nunito;
+                margin-bottom: 18px;
+                svg {
+                    margin-right: 5px;
+                }
+                span {
+                    color: $gray-12;
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    font-weight: normal;
+                    align-items: center;
+                }
+            }
+            p.border-b {
+                border-radius: 4px;
+                border: solid 1px $color-border-3;
+                padding: 10px;
+                img {
+                    width: 17px;
+                    height: 9px;
+                    margin-left: 10px;
+                }
+                span.d-flex.flex-row.align-items-center {
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: $font-nunito;
+                }
+            }
+        }
+        .train__infor-sale {
+            .infor__sale-title {
+                h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: $blue-dark-cl;
+                    font-family: $font-futura;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    font-weight: normal;
+                    color: $gray-12;
+                    margin-bottom: 0;
+                }
+            }
+            .infor__sale-km {
+                input {
+                    border: 1px solid $color-border-3;
+                    border-radius: 8px;
+                    padding: 10px;
+                    width: 70%;
+                    outline: none;
+                }
+                ::placeholder {
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    font-weight: normal;
+                    color: $gray-12;
+                }
+                button {
+                    padding: 10px 20px;
+                    background-color: $gray-17-other;
+                    border-radius: 8px;
+                    border: none;
+                    outline: none;
+                    margin-left: 5px;
+                    a {
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        color: $blue-light-3;
+                    }
+                }
+            }
+            .infor__sale-totle {
+                margin-top: 15px;
+                border-top: 1px solid $color-border-2;
+                padding: 13px 0;
+                p,
+                div {
+                    font-size: 16px;
+                    font-family: $font-nunito;
+                    color: $gray-12;
+                    font-weight: normal;
+                    margin-bottom: 10px;
+                    span.totol {
+                        color: $blue-cl;
+                        font-weight: bold;
+                    }
+                }
+                .wrapp {
+                    .text-bold {
+                        color: $gray-12;
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                    }
+                }
+            }
+        }
+    }
+    .booking__train-sig {
+        padding: 24px;
+        p {
+            font-size: 14px;
+            font-family: $font-nunito;
+            font-weight: normal;
+            color: $gray-18-other;
+        }
+    }
+    .train__wrapper-btn {
+        padding: 0 24px;
+        .wrapper__btn-btn {
+            .col-6 {
+                margin: 0 5px;
+            }
+            button.btn__btn-button.color-gray {
+                color: $blue-light-3;
+                border: 1px solid $color-border;
+                background-color: inherit;
+                font-size: 20px;
+                font-weight: 450;
+                border-radius: 8px;
+                padding: 10px 40px;
+                margin-right: 16px;
+                outline: none;
+            }
+            button.btn__btn-button.other-color {
+                color: $white;
+                background-color: $orange-az2;
+                border: none;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 8px;
+                padding: 10px 40px;
+                outline: none;
+            }
+        }
+    }
+}

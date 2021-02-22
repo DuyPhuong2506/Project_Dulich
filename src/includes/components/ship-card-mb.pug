@@ -1,0 +1,64 @@
+mixin private-ship-card(title,type="")
+    .ship-card-item
+        .container
+            .row
+                .col-md-12
+                    .ship-card
+                        .card-img
+                            a(href="#")
+                                img(src="./assets/images/box-yacht/product-thumb.png", alt="")
+                            a(href="#").card-img-button Xem ảnh tàu
+                        .card--body
+                            h4.card-title=title
+                            .card-top-button
+                                button.btn.btn-light-primary.mr-1
+                                    a(href="#") Có đồ ăn
+                                button.btn.btn-light-primary
+                                    a(href="#") Xe đưa đón
+                            if type=="tàu riêng"
+                                ul.card-detail.mt-3
+                                    li.card-detail-item
+                                        a.item-link Cảng khởi hành:
+                                            span  Trần Châu
+                                    li.card-detail-item
+                                        a.item-link Thời gian khởi hành:
+                                            span  Linh động
+                                    li.card-detail-item
+                                        a.item-link Dịch vụ cơ bản:
+                                            span  Karaoke
+                                    li.card-detail-item
+                                        a.item-link Đã bao gồm:
+                                            span vé thắng cảnh + vé tàu
+                                    li.card-detail-item
+                                        a.item-link Có thêm các dịch vụ đi kèm
+                            else if type=="tàu ghép"
+                                ul.card-detail.mt-3
+                                    li.card-detail-item
+                                        a.item-link Cảng khởi hành:
+                                            span  Trần Châu
+                                    li.card-detail-item
+                                        a.item-link Thời gian khởi hành:
+                                            span  08h15
+                                    li.card-detail-item
+                                        a.item-link Vé thắng cảnh
+                                    li.card-detail-item
+                                        a.item-link!= ' Chèo thuyền Kayak ' + ' <span>40.000 đ</span>/người'
+                                    li.card-detail-item
+                                        a.item-link Đưa đón / tiễn Tại khách sạn ở Bãi Cháy
+                                    li.card-detail-item
+                                        a.item-link Vé thăm quan tuyến
+                                    li.card-detail-item
+                                        a.item-link!= ' Bữa trưa / chiều ' + ' <span>150.000 đ</span>/người'
+                                    li.card-detail-item
+                                        a.item-link Hướng dẫn viên du lịch suốt hành trình
+                                    li.card-detail-item
+                                        a.item-link Bảo hiểm
+                        .card-bottom
+                            .card-price.d-flex.align-items-center.justify-content-between.my-2
+                                .price-left
+                                    p.current-price đ 399,000
+                                    p.main-price đ 599,000
+                                .price-right
+                                    button.btn.btn-light-red.btn-sale Sale off -30%
+                        button.card-btn.btn.btn-orange-az.mt-2
+                            a(href="./booking-train-desktop.html") Đặt tàu
