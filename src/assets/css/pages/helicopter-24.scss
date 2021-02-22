@@ -1,0 +1,114 @@
+.helicopter {
+    .box-helicopter {
+        background: $white;
+        @include breakpoint(768) {
+            margin-bottom: 20px;
+        }
+        .img-helicopter {
+            width: 100%;
+        }
+        .content-helicopter {
+            padding: 0 38px 59px 29px;
+            .title-top {
+                margin: 63px 0 68px;
+                font-family: $font-nunito;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: left;
+                color: $box-text;
+            }
+            .content__item {
+                margin: 0 11px 33px 0;
+                font-family: $font-nunito;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #616980;
+                .item-title {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .box-tiket {
+        background: $white;
+        padding: 45px 50px 35px 51px;
+        border-radius: $border-radius-form;
+        @include breakpointminmax(0, 1199) {
+            padding: 20px 25px;
+        }
+        @include min-breakpoint(992) {
+            position: sticky;
+            top: 120px;
+        }
+        .tiket__title {
+            font-family: $font-futura;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: left;
+            color: #10284f;
+        }
+        .box-list {
+            padding: 26px 0 125px 0;
+            .list__item {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 6px;
+                    color: $blue-6;
+                    padding-right: 11px;
+                }
+                span {
+                    font-family: $font-nunito;
+                    font-size: 16px;
+                    text-align: left;
+                    color: $box-text;
+                }
+            }
+        }
+        .box-paytime {
+            .paytime__title {
+                font-family: $font-nunito;
+                font-size: 16px;
+                text-align: left;
+                color: $box-text;
+                span {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            .paytime__btn {
+                margin-top: 18px;
+                background: $red;
+                padding: 18px 0;
+                text-align: center;
+                border-radius: 6px;
+                a {
+                    font-size: 18px;
+                    font-family: $font-futura;
+                    font-weight: 600;
+                    text-align: left;
+                    color: $white;
+                }
+            }
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+.main__helicopter-section {
+    .helicopter {
+        margin-top: 100px;
+    }
+    .box-discover-section {
+        margin-top: 100px;
+    }
+    .happy__client__wrapper {
+        margin-top: 100px;
+    }
+    .box-partner-section {
+        margin: 100px 0;
+    }
+}

@@ -1,0 +1,11 @@
+mixin privateShipVideo(title)
+    .discover-more
+        .container
+            .row.align-items-center
+                .col-lg-4.col-md-12
+                    .discover-more__content
+                        h3.content__title=title
+                .col-lg-8.col-md-12
+                    .discover-more__video
+                        video(autoplay controls)
+                            source(src="./assets/video/video.mp4" type="video/mp4")

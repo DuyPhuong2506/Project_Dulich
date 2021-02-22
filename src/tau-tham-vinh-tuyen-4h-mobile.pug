@@ -1,0 +1,20 @@
+extend includes/layout/layout-mobile.pug
+block pages
+    .not-select-mobile-section
+        .banner-mb-section
+            .banner__mb
+                .container
+                    .row
+                        .col-12
+                            include includes/components/banner-mb.pug
+                            +banner-mb("Tàu thăm vịnh tuyến 4 giờ")
+        include ./includes/components/description-mb.pug
+        include ./includes/components/schedule-main-mb-2.pug
+        include ./includes/components/select-route.pug
+        .select-route-section
+            .container
+                h3.select-route__title Chọn tàu
+            +select-route('Tàu riêng')
+            +select-route('Tàu ghép')
+        include ./includes/components/why-choose.pug
+        include ./includes/components/happy-client-mb.pug

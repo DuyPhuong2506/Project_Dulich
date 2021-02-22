@@ -1,0 +1,22 @@
+extend includes/layout/layout-mobile.pug
+block pages
+    .not-select-mobile-section
+        .banner-mb-section
+            .banner__mb
+                .container
+                    .row
+                        .col-12
+                            include includes/components/banner-mb.pug
+                            +banner-mb("Tàu riêng thăm vịnh")
+        include includes/components/box-discover-more.pug
+        + box-discover-more(false)
+        include ./includes/components/description-mb.pug
+        include ./includes/components/schedule-main-mb.pug
+        include ./includes/components/select-route.pug
+        .select-route-section
+            .container
+                h3.select-route__title Chọn tuyến
+            +select-route('Tuyến 4 giờ')
+            +select-route('Tuyến 4 giờ')
+        include ./includes/components/why-choose.pug
+        include ./includes/components/happy-client-mb.pug

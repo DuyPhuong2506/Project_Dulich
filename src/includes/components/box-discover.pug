@@ -1,0 +1,15 @@
+mixin box-discover(heading,text,imgUrl, isHomePage = false, videoSrc = "https://www.youtube.com/embed/hbQbaUeOkDQ?autoplay=1&mute=1&loop=1")
+    .box-discover-section
+        .container
+            .row.align-items-center
+                .col-lg-4.col-md-12
+                    .box-discover-section__left
+                        h2.box-discover-section__left-heading= heading
+                        p.box-discover-section__left-text= text
+                .col-lg-8.col-md-12
+                    .box-discover-section__right
+                        if isHomePage
+                            video(autoplay controls)
+                                source(src="./assets/video/video.mp4" type="video/mp4")
+                        else
+                            img(src=imgUrl).img-fluid.box-discover-section__right-img

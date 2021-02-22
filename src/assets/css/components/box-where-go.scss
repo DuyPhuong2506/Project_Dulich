@@ -1,0 +1,83 @@
+.box-where-go-section {
+    .box-where-go {
+        &__title {
+            font-family: $font-futura;
+            font-size: 30px;
+            font-weight: 600;
+            color: #222f5a;
+            margin-bottom: 22px;
+            @include breakpoint(425) {
+                font-size: 26px;
+                margin-bottom: 20px;
+                color: #10284f;
+                line-height: 36.14px;
+            }
+        }
+        &__box {
+            margin-bottom: 30px;
+            text-decoration: none;
+            display: block;
+            @include breakpoint(425) {
+                margin-bottom: 0;
+            }
+            &-img {
+                position: relative;
+                font-family: $font-nunito;
+                font-size: 16px;
+                border-radius: 20px;
+                overflow: hidden;
+                color: #fff;
+                img {
+                    object-fit: cover;
+                    border-radius: 20px;
+                    transition: all 0.5s ease-in-out;
+                    @include min-breakpoint(768) {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    @include breakpoint(425) {
+                        height: 224.667px !important;
+                    }
+                }
+                .img__content {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 40px;
+                    @include breakpoint(425) {
+                        bottom: 9px;
+                        left: 22px;
+                    }
+                    &-place {
+                        margin-bottom: 0;
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        color: #fff;
+                        @include breakpoint(425) {
+                            font-size: 18px;
+                            line-height: 24.55px;
+                        }
+                    }
+                    &-visitor {
+                        font-size: 16px;
+                        font-family: $font-nunito;
+                        color: #fff;
+                        @include breakpoint(425) {
+                            font-size: 14px;
+                            line-height: 19.1px;
+                        }
+                    }
+                }
+            }
+        }
+        .box-where-go__box-1 {
+            img {
+                width: 100%;
+                height: 339px;
+                @include breakpointminmax(992, 1399) {
+                    height: 286.36px;
+                }
+            }
+        }
+    }
+}

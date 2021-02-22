@@ -1,0 +1,94 @@
+.filter-mbv2{
+    padding: 30px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    -webkit-transition: all 0.4s 0s ease-in-out;
+    -moz-transition: all 0.4s 0s ease-in-out;
+    -o-transition: all 0.4s 0s ease-in-out;
+    transition: all 0.4s 0s ease-in-out;
+    z-index: 999;
+    background: $white;
+    height: 100vh;
+    overflow-y: auto;
+    &.active{
+        transform: translateX(0);
+    }
+    & .fiter-mb__top{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 12px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $color-border-4;
+        & a{
+            & img{
+                width: 23px;
+            }
+        }
+        & .title{
+            font-family:$font-nunito;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;
+            color: $grey-12;
+            margin-bottom: 0;
+        }
+        & .delete{
+            font-family:$font-nunito;
+            font-size: 18px;
+            line-height: 1;
+            color: $banner-content-head;
+            border: none;
+            background: transparent;
+            outline: none;
+        }
+    }
+    & .fiter-mb__item{
+        position: relative;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        & select{
+            width: 100%;
+            padding: 13px 15px;
+            font-family: $font-futura;
+            font-size: 16px;
+            color: $banner-content-head;
+            border-radius: 10px;
+            background: $white;
+            border: 1px solid $color-border;
+            outline: none;
+            -moz-appearance:none; 
+            -webkit-appearance:none;
+            appearance:none;
+        }
+        & .arrow{
+            width: 40px;
+            padding-left: 10px;
+            padding-right: 15px;
+            position: absolute;
+            top: 47%;
+            right: 16px;
+            z-index: 99;
+            transform: translateY(-50%);
+            background: $white;
+        }
+    }
+    & .btn-filtermb{
+        font-family: $font-futura;
+        font-weight: bold;
+        font-size: 18px;
+        color: $white;
+        display: block;
+        margin-top: 20px;
+        background: $orange-az2;
+        border-radius: 8px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

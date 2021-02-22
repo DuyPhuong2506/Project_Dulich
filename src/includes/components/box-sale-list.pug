@@ -1,0 +1,38 @@
+-
+    const saleListData = [
+        {
+            imgSrc: "./assets/images/box-sale-list/sale-1.png",
+            title: 'Combo 1 ngày 2 đêm cho cả gia đình',
+            price: "đ 2.900.000",
+        },
+        {
+            imgSrc: "./assets/images/box-sale-list/sale-2.png",
+            title: 'Thăm vịnh bằng trực thăng',
+            price: "đ 2.900.000",
+        },
+        {
+            imgSrc: "./assets/images/box-sale-list/sale-3.png",
+            title: 'Tắm Onsen -50%',
+            price: "đ 2.900.000",
+        },
+        {
+            imgSrc: "./assets/images/box-sale-list/sale-4.png",
+            title: 'Vé du thuyền -40%',
+            price: "đ 2.900.000",
+        }
+    ]
+
+mixin box-sale-list(mb = false)
+    .box-sale-list-section
+        .box-sale-list
+            .container
+                h3.box-sale-list__title Săn deal giá rẻ
+                .box-sale-list__wrap(class=`${mb ? 'owl-carousel owl-theme': 'row'}`)
+                    each item in saleListData
+                        .box-sale-list__box(class=`${mb ? '':'col-lg-3 col-md-6'}`)
+                            a.box-sale-list__box-img(href="#")
+                                span HOT DEAL
+                                img(src=item.imgSrc, alt="img")
+                            a(href="#")
+                                h4.box-sale-list__box-title=item.title
+                            span.box-sale-list__box-price=item.price

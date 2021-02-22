@@ -1,0 +1,65 @@
+.why-choose-section{
+    & .why-choose{
+        &__title{
+            font-family: $font-futura;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+            color: $grey-12;
+            margin-bottom: 15px;
+            @include breakpointminmax(320,768) {
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 23px;
+            }
+        }
+        &__item{
+            padding: 20px 0;
+            @include breakpointminmax(320,768) {
+                padding:0;
+                padding-bottom: 20px;
+            }
+            display: flex;
+            &-icon{
+                font-size: 22px;
+                color: $green-2;
+                margin-right: 23px;
+                @include breakpointminmax(320,768) {
+                    margin-right: 15px;
+                }
+                & i{
+                    vertical-align: top;
+                }
+            }
+            &-desc{
+                & h4{
+                    font-family: $font-nunito;
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: normal;
+                    color: $grey-12;
+                    margin-bottom: 13px;
+                    text-transform: uppercase;
+                    @include breakpointminmax(320,768) {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                }
+                & p{
+                    font-family: $font-nunito;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $gray-16;
+                    @include breakpointminmax(320,768) {
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(525) {
+        .col-lg-3.col-md-6:last-child .why-choose__item{
+            padding-bottom: 0;
+        }
+    }
+}

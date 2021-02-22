@@ -1,0 +1,9 @@
+.bread-crumb-section {
+	padding: 20px 0;
+	border-bottom: 1px solid $border-color-4;
+	.bread-crumb__links {
+		font-size: 14px;
+		font-weight: 600;
+		color: $grey-dark-2;
+	}
+}

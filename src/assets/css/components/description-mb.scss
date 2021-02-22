@@ -1,0 +1,32 @@
+.description-mb-section{
+    background-color: $alice-blue;
+    .description-mb__heading{
+        padding-top: 22px;
+        &-content{
+            font-family: $font-futura;
+            font-size: 20px;
+            font-weight: 600;
+            color: $grey-12;
+            line-height: 28px;
+        }
+    }
+    .description-mb__img {
+        display: flex;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+.btn-black-az{
+    font-family: $font-futura;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $grey-12;
+    border: 1px solid $grey-12;
+    border-radius: 8px;
+    padding: 10px 35px;
+    background-color: $alice-blue;
+}
